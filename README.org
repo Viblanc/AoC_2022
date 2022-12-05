@@ -1,0 +1,4 @@
+* Advent of Code 2022
+
+Decided to do it in Rust to actually try to learn it, but I thought
+"man, I really like OCaml as well". So I went with both.
