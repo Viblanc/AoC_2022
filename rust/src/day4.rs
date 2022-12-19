@@ -45,7 +45,7 @@ fn get_range_pair(str: &str) -> (MyRange, MyRange) {
 }
 
 fn filter_ranges(predicate: fn (s: &MyRange, r: &MyRange) -> bool) -> Result<u32> {
-    Ok(aoc::read_file::<String>("day4")?
+    Ok(aoc::read_file_as_lines::<String>("day4")?
         .iter()
         .map(|line| {
             let (range1, range2) = get_range_pair(line);

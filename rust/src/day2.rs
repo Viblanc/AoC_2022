@@ -63,7 +63,7 @@ fn get_result(hand1: &Hand, hand2: &Hand) -> u32 {
 
 fn part1() -> Result<u32> {
     Ok(
-        aoc::read_file::<String>("day2")?
+        aoc::read_file_as_lines::<String>("day2")?
             .into_iter()
             .map(|line| {
                 let hands: Vec<Hand> = line
@@ -79,7 +79,7 @@ fn part1() -> Result<u32> {
 
 fn part2() -> Result<u32> {
     Ok(
-        aoc::read_file::<String>("day2")?
+        aoc::read_file_as_lines::<String>("day2")?
             .into_iter()
             .map(|line| {
                 let strs: Vec<&str> = line.split(" ").collect();

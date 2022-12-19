@@ -15,7 +15,7 @@ fn items_priorities() -> HashMap<char, u32, RandomState> {
 
 fn part1() -> Result<u32> {
     Ok(
-        aoc::read_file::<String>("day3")?
+        aoc::read_file_as_lines::<String>("day3")?
             .into_iter()
             .map(|s| {
                 let (fst, snd) = s.split_at(s.len() / 2);
@@ -35,7 +35,7 @@ fn part1() -> Result<u32> {
 
 fn part2() -> Result<u32> {
     Ok(
-        aoc::read_file::<String>("day3")?
+        aoc::read_file_as_lines::<String>("day3")?
             .chunks(3)
             .into_iter()
             .map(|r| {

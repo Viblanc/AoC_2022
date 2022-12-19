@@ -1,7 +1,7 @@
 use anyhow::Result;
 
 fn get_first_start_of_packet_marker(win_size: usize) -> Result<u32> {
-    Ok(aoc::read_file::<String>("day6")?[0]
+    Ok(aoc::read_file_as_string("day6")?
         .chars()
         .collect::<Vec<char>>()
         .windows(win_size)

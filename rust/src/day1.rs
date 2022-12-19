@@ -1,8 +1,8 @@
 use anyhow::Result;
-use aoc::read_file;
+use aoc::read_file_as_lines;
 
 fn count_calories() -> Result<Vec<u32>> {
-    let input = read_file::<String>("day1")?;
+    let input = read_file_as_lines::<String>("day1")?;
     let elves_calories: Vec<Vec<u32>> = input.split(|s| s.len() == 0)
         .map(|slice| slice.into_iter().map(|s| s.parse::<u32>().unwrap()).collect())
         .collect();
